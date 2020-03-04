@@ -6,3 +6,119 @@
   /* Property example with a value */
 
 }
+
+/* Font-family: The property font-family is used to change a specific paragraph or sentence's font. */
+
+.font-family {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Font-size: The font-size property is changing words, sentences, or paragraph's font size, and it depends on what do you want it to be (large, small, medium, larger, smaller, etc). */
+
+.font-size {
+  font-size: medium;
+}
+
+/* Font-weight: The font-weight property sets how thick or thin character in text should be displayed. */
+
+.font-weight {
+  font-weight: bolder;
+}
+
+/* Font-style: The font-style property is used to style the font of character in a text whether it should be (bold, italic, normal, etc). */
+
+.font-style {
+  font-style: oblique;
+}
+
+/* Line-height: The line-height property sets the height of line box.It is used to set the distance between lines of text. */
+
+.line-height {
+  line-height: initial;
+}
+
+/* Font-variant: The font-variant property is a shorthand for the longhand properties font-variant-caps, font-variant-numeric, font-variant-alternates, etc. It specifies whether or not a text should be displayed in a small-caps font. */
+
+.font-variant {
+  font-variant: small-caps;
+}
+
+/* Font-stretch: The font-stretch property makes text characters wider or narrower than the font.s default character width. */
+
+.font-stretch {
+  font-stretch: semi-condensed;
+}
+
+/* Font-size-adjust: The font-size-adjust property sets how the font size should be chosen based on the height of lowercase rather than capital letters. */
+
+.font-size-adjust {
+  font-size-adjust: inherit;
+}
+
+/* Font-synthesis: The font-synphasis property controls which missing typefaces, bold or italic, may be synthesized by the browser. */
+
+.font-synthesis {
+  font-synthesis: weight;
+}
+
+/* Letter-spacing: The letter-spacing property defines the spacing between the characters of a blok text. */
+
+.letter-spacing {
+  letter-spacing: normal;
+}
+
+/* Word-spacing: The word-spacing property sets the length of space between words. */
+
+.word-spacing {
+  word-spacing: 1cm;
+}
+
+/* Text-align: The text-align property specifies the horizontal alignment of text in an element. */
+
+.text-align {
+  text-align: end;
+}
+
+/* Text-decoration-line: The text-decoration-line property sets differents of text decoractions to ue (like underline, overline, line-through, etc). */
+
+.text-decoration-line {
+  text-decoration-line: overline;
+}
+
+/* Text-decoration-style: The text-decoration-style property sets the style of the lines specified by text-decoration-line. We have to include text-decoration-line in the rule. */
+
+.text-decoration-style {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+/* Text-decoration-color: The text-decoration-color property  specifies the color of the text-decoration that has been styled from the text-decoration-line. We mast include text-decoration-line in the rule. */
+
+.text-decoration-color {
+  text-decoration-line: overline;
+  text-decoration-color: lightseagreen;
+}
+
+/* Text-indend: The text-indend property is used to indend a text or a paragraph. */
+
+.text-indent {
+  text-indent: 2cm;
+}
+
+/* Text-transform: The text-transform property is used to capitalise an element's text.It is used to make text appear in all-uppercase or all-lowercase, or each word capitalised. */
+
+.text-transform {
+  text-transform: uppercase;
+}
+
+/* Vertical-align: The verical-align property sets vertical alignment of an inline, inline-block. */
+
+.vertical-align {
+  vertical-align: top;
+}
+
+/* White-space: The white-space property is used to create white space in a text or paragraph. */
+
+.white-space {
+  white-space: pre-wrap;
+}
