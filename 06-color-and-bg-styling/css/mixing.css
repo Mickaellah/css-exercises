@@ -1,0 +1,26 @@
+.dory > figure {
+  background-image: url("../images/crab.png"), url("../images/coral-reef.png"), url("../images/bubble.png");
+  background-color: lightskyblue;
+  background-image: linear-gradient();
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+.henry > figure {
+  background-image: url("../images/grass-left.png"), url("../images/grass-clump.png"), url("../images/sun.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+
+
+.lu-seal > figure {
+  background-image: url("../images/palm.png"), url("../images/palm-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
+}
+

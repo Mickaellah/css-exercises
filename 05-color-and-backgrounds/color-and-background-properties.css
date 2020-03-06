@@ -6,3 +6,79 @@
     /* Property example with a value */
 
   }
+
+
+Color
+/* The color property is used to decorate or color the text itself. */
+
+color {
+  color: tomato;
+}
+
+Background-color
+/* The background-color property is used to decorate the background or sets the background color. */
+
+background-color {
+  background-color: lightgray;
+}
+
+Background-image
+/* The background-image is used to set a background image on an element. */
+
+background-image {
+  background-image: image();
+}
+
+Background-repeat
+/* The background-repeat sets how background images are repeated. */
+
+background-repeat {
+  background-repeat: round;
+}
+
+Background-position
+/* The background-position is used to put the initial position for each background image. */
+
+background-position {
+  background-position: right;
+}
+
+Background-attachement
+/* The background-attachement sets whether a background image's position is fixed within the viewport, or scrolls with its containing block. */
+
+background-attachement {
+  background-attachment: scroll;
+}
+
+Background-clip
+/* The background-clip property sets whether an element's background extends underneath its border box, padding box, or content box. */
+
+background-clip {
+  background-clip: content-box;
+}
+
+Background-orirgin
+/* The background-origin property sets the background's origin: from the border start, inside the border, or inside the padding. */
+
+background-origin {
+  background-origin: padding-box;
+}
+
+Background-size
+/* The background-size property is used to set the size of the element's background image. */
+
+background-size {
+  background-size: cover;
+}
+
+Box-shadow
+/* The box-shadow property adds shadow effects around an element's frame. */
+
+box-shadow {
+  box-shadow: lightseagreen;
+}
+
+
+
+
+
