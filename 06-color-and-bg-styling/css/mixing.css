@@ -1,7 +1,7 @@
 .dory > figure {
-  background-image: url("../images/crab.png"), url("../images/coral-reef.png"), url("../images/bubble.png");
-  background-color: lightskyblue;
-  background-image: linear-gradient();
+  background-image: url("../images/crab.png"), url("../images/bubble.png"), url("../images/coral-reef.png");
+  background-color: lightsteelblue;
+  background-image: linear-gradient(#ffffffff);
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -10,17 +10,19 @@
 
 
 .henry > figure {
-  background-image: url("../images/grass-left.png"), url("../images/grass-clump.png"), url("../images/sun.png");
+  background-image: url("../images/grass-clump.png"), url("../images/grass-left.png"), url("../images/sun.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom right;
+  background-size: inherit;
+  background-position: bottom left;
+  background-image: linear-gradient();
 }
 
 
 .lu-seal > figure {
-  background-image: url("../images/palm.png"), url("../images/palm-2.png");
+  background-image: url("../images/beach-ball.png"), url("../images/palm.png"), url("../images/palm-2.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 30rem;
   background-position: top left;
+  background-color: lavender;
 }
 
