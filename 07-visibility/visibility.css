@@ -6,6 +6,27 @@
   /* Property example with a value */
 }
 
+Opacity
+/* The opacity property sets the opacity of an element. Opacity is the quality that something has when it is difficult to see through. */
+
+.opacity {
+  opacity: unset;
+}
+
+Display
+/* The display property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex. */
+
+.display {
+  display: grid;
+}
+
+Visibility
+/* The visibility property shows or hides an element without the layout of a document. The property can also hide rows or columns in a table. Visibility is the fact of being easy to see. */
+
+.visibility {
+  visibility: hidden;
+}
+
 /*
   Questions
   =======================
