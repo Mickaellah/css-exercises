@@ -1,28 +1,73 @@
 .dory > figure {
-  background-image: url("../images/crab.png"), url("../images/bubble.png"), url("../images/coral-reef.png");
-  background-color: lightsteelblue;
-  background-image: linear-gradient(#ffffffff);
-  background-position: right;
+  background-image: url("../images/crab.png"),
+                    url("../images/sun.png"),
+                    url("../images/bubble.png"),
+                    url("../images/coral-reef.png"),
+                    url(../images/coral-reef.png),
+                    url("../images/coral-reef.png");
+                    /*linear-gradient(180deg,
+                                    lightblue 0%,
+                                    lightblue 10%,
+                                    blue 10%,
+                                    blue 67%,
+                                    lightgray 67%,
+                                    lightgray 100%,
+                                   ) */
+  background-size: 30% 25%,
+                   30% 50%% ,
+                   17% 20%,
+                   50% 40%%,
+                   100% 100%;
+  background-position: 90% 15% ,
+                       0% 85%,
+                       65% 70%,
+                       77% 69%,
+                       75% 73%,
+                       0% 0%;
+  background-repeat: no-repeat,
+                     no-repeat,
+                     no-repeat,
+                     no-repeat;
+}
+
+#div figure::before {
+  background-image: url("../images/crab.png");
+  background-size: 15%;
+  background-position: 70%;
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 
 
 .henry > figure {
-  background-image: url("../images/grass-clump.png"), url("../images/grass-left.png"), url("../images/sun.png");
+  background-image: url("../images/grass-clump.png"),
+                   url("../images/grass-left.png"),
+                   url("../images/sun.png");
+  background-size: 50% 50%,
+                   45% 45%,
+                   120px 120px,
+                   100% 100%;
+  background-position: center,
+                       100% bottom,
+                       top left,
+                       0% 0%;
   background-repeat: no-repeat;
-  background-size: inherit;
-  background-position: bottom left;
-  background-image: linear-gradient();
 }
 
 
 .lu-seal > figure {
-  background-image: url("../images/beach-ball.png"), url("../images/palm.png"), url("../images/palm-2.png");
+  background-image: url("../images/beach-ball.png"),
+                    url("../images/palm.png"),
+                    url("../images/palm-2.png"),
+                    linear-gradient(180deg, lightblue 50%, lightgray 50%);
+  background-size: 30% 30%,
+                   70% 70%,
+                   70% 70%,
+                   100% 100%;
+  background-position: top right,
+                       top left,
+                       top right,
+                       0% 0%;
   background-repeat: no-repeat;
-  background-size: 30rem;
-  background-position: top left;
-  background-color: lavender;
 }
 
