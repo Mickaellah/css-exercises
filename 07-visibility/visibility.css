@@ -20,6 +20,25 @@ Display
   display: grid;
 }
 
+Display inline
+/* This property  is used to display an element as an inline element. */
+
+.display {
+  display: inline;
+}
+
+Display block
+/* Display: block is displayed an element as a block-level element. */
+.display {
+  display: block;
+}
+
+Display none
+/* This property is used to hide elements. */
+.display {
+  display: none;
+}
+
 Visibility
 /* The visibility property shows or hides an element without the layout of a document. The property can also hide rows or columns in a table. Visibility is the fact of being easy to see. */
 
@@ -36,4 +55,10 @@ Visibility
   - Why would we use `visibility: visible;`?
 
 */
+
+/* The difference between `opacity` and a `background-color` = opacity is a property and the background-color is the component of the value of a color property. If you do not want to apply opacity to child elements, use the background property instead. */
+
+/* The difference between `display: none;` and `visibility: hidden;` = display: none; turns off the display and removes the element completely from the document and visibility: hidden; hides the element, but it still takes up space in the layout. */
+
+/* We use `visibility: visible;` because we want the element to be seen or visible. */
 
