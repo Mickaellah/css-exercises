@@ -5,3 +5,78 @@
   */
     /* Property example with a value */
   }
+
+
+KEYWORD
+Content-box
+/* This is used to create box which is used to wrap the content of the HTML element. */
+.content-box {
+  width: 150px;
+  height: 125px;
+}
+
+
+Padding-box
+/*This is used to create a box which is follow after the content-box, I mean the padding-box wraps the content-box. */
+.padding-box {
+  width: 25px;
+  height: 25px;
+}
+
+
+Border-box
+/*This sets a box to form a border like a border with picture and also give a decoration to the HTML element. */
+.border-box {
+  width: 10px;
+  height: 10px;
+}
+
+
+PROPERTIES
+Border
+/* This property is used to create a border to an HTML element. */
+.border {
+  margin-top: 4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+}
+
+
+Margin
+/*This property is used to set the empty space at the side of a page or the margin according to the LDOCE 5 English dictionary. */
+.margin {
+  margin: 20px, 25px, 15px, 23px;
+}
+
+Padding
+/* According to google padding property is used to generate space around an element's content, inside af any defined borders. */
+.padding {
+  padding: 15px, 20px, 21px, 18px;
+}
+
+Display
+/* According to google display property sets an element's inner and outer display type. */
+.display {
+  display: block;
+}
+
+
+Box-sizing
+/* This property is used to set the size of padding, border an content-box in an element. */
+.box-sizing {
+  box-sizing: content-box,
+              border-box,
+              padding-box;
+}
+
+
+ESSAY
+
+/*   For most design work, designers are always use the box model to create the beauty of their work.
+Box model is a big box which is used to wrap all the boxes in every HTML element like (margin, border, padding and content-box). This property seems to summarise all of those properties which I have told before. According to google we also can say that box model can be used as a toolkit for customising the layout of different elements. */
+
+
+
+
+
