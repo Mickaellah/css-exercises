@@ -1,17 +1,17 @@
 nav li:first-child {
-    visibility: visible;
+  visibility: visible;
   }
 
 nav li:nth-child(2){
-    visibility: collapse;
+  visibility: collapse;
   }
 
 nav li:last-child {
-    visibility: hidden;
+  visibility: hidden;
   }
 
-  table span {
-    display: none;
+table span {
+  display: none;
   }
 
 tr:nth-child(2) {
@@ -26,4 +26,3 @@ tr:nth-last-child(1) td:nth-last-child(1) {
 #opacity-canvas span {
   opacity: 0.5;
 }
-
