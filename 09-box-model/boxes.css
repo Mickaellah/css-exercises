@@ -36,10 +36,7 @@ PROPERTIES
 Border
 /* This property is used to create a border to an HTML element. */
 .border {
-  margin-top: 4px;
-  margin-right: 4px;
-  margin-bottom: 4px;
-  margin-left: 4px;
+  margin: 4px, 4px, 4px, 4px;
 }
 
 
@@ -70,11 +67,43 @@ Box-sizing
               padding-box;
 }
 
+/* When two differently sized margins of two different boxes collide, both would combine together and the one which has big margin take the space. */
 
-ESSAY
+/* Formula for working out an element visual width is left-border + left-padding + content-box + right-padding + right-border. */
 
-/*   For most design work, designers are always use the box model to create the beauty of their work.
-Box model is a big box which is used to wrap all the boxes in every HTML element like (margin, border, padding and content-box). This property seems to summarise all of those properties which I have told before. According to google we also can say that box model can be used as a toolkit for customising the layout of different elements. */
+
+/* Difference between display values inline, inline-block and block :
+  According to google,
+    1- Inline, we cannot put block element inside of inline element.
+
+    2- Block, generates line breaks before and after an element.
+
+    3- Inline-block: The element genarartes a block element box that will be flowed with surrounding content as if it were a single inline box (behaving much like a replaced element would).  */
+
+
+
+html {
+  font-size: x-large;
+  text-align: center;
+  background-color: skyblue;
+  font-weight: 500;
+}
+
+header {
+  font-family: serif;
+  color: blue;
+}
+
+.essay {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: darkcyan;
+}
+
+
+a {
+  font-family: cursive;
+  color: darkmagenta;
+}
 
 
 
