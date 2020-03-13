@@ -1,0 +1,93 @@
+h1 {
+  padding: 1rem;
+  border: 1rem solid;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+header {
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  margin-block-end: 1rem;
+}
+
+body {
+  margin: 1rem;
+}
+
+table {
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  padding-block-start: 2rem;
+  padding-block-end: 2rem;
+}
+
+
+tr:nth-child(1) td:first-of-type {
+  padding-right: 1rem;
+}
+
+tr:nth-child(1) td:nth-child(2) {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+tr:nth-child(1) td:last-of-type {
+  padding-left: 1rem;
+}
+
+tr:nth-child(2) td:first-of-type {
+  padding-right: 1rem;
+}
+
+tr:nth-child(2) td:nth-child(2) {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+tr:nth-child(2) td:last-of-type {
+  padding-left: 1rem;
+}
+
+tr:last-of-type td:first-of-type {
+  padding-right: 1rem;
+}
+
+tr:last-of-type td:nth-child(2) {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+tr:last-of-type td:last-of-type {
+  padding-left: 1rem;
+}
+
+
+footer {
+  padding: 1rem;
+  margin-block-start: 2rem;
+
+}
+
+footer span {
+  border: 1rem solid;
+  display: block;
+
+}
+
+tr:first-of-type span {
+  border-bottom: 1rem solid;
+}
+
+tr:nth-child(2) span {
+  border-top: 1rem solid;
+  border-bottom: 1rem solid;
+}
+
+tr:last-of-type span {
+  border-top: 1rem solid;
+}
+
