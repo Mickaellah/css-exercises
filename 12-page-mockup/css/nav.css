@@ -1,0 +1,35 @@
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+
+nav li:nth-child(1) {
+  position: absolute;
+  top: 1.90rem;
+  left: 28rem;
+}
+
+nav li:nth-child(2) {
+  position: absolute;
+  top: 1.9rem;
+  left: 31rem;
+}
+
+
+nav li:nth-child(3) {
+  position: absolute;
+  top: 1.9rem;
+  left: 34rem;
+}
+
+
+nav li:last-child {
+  position: absolute;
+  top: 1.9rem;
+  left: 40rem;
+}

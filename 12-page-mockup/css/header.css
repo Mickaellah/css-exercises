@@ -1,0 +1,30 @@
+header {
+  font-family: monospace;
+  font-size: 1rem;
+  background-image: url("../images/bg_desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  color: rgba(255, 255, 255, 1);
+  height: 17rem;
+}
+
+
+header a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+
+}
+
+
+h2 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+header p {
+  text-align: center;
+}
+
+
+

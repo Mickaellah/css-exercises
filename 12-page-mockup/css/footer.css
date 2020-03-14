@@ -1,0 +1,15 @@
+footer {
+  border: 0.7px solid black;
+}
+
+h4 {
+  margin-block-start: 1rem;
+  margin-inline-start: 15rem;
+  line-height: 0.7rem;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+
