@@ -1,4 +1,4 @@
-nav a {
+/*nav a {
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -10,26 +10,67 @@ nav ul {
 
 nav li:nth-child(1) {
   position: absolute;
-  top: 1.90rem;
-  left: 28rem;
+  top: 2rem;
+  left: 34rem;
 }
 
 nav li:nth-child(2) {
   position: absolute;
-  top: 1.9rem;
-  left: 31rem;
+  top: 2rem;
+  left: 37rem;
 }
 
 
 nav li:nth-child(3) {
   position: absolute;
-  top: 1.9rem;
-  left: 34rem;
+  top: 2rem;
+  left: 41rem;
 }
 
 
 nav li:last-child {
   position: absolute;
-  top: 1.9rem;
-  left: 40rem;
+  top: 2rem;
+  left: 48rem;
+} */
+
+
+body > nav {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+  margin-block-end: -7rem;
+  padding-block-start: 1rem;
+  text-align: center;
+}
+
+body > nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+body > nav li {
+  display: inline;
+  margin: 0 1rem;
+
+}
+
+body > nav li:first-child {
+  margin-inline-start: 0;
+}
+
+body > nav li:last-child {
+  margin-inline-start: 0;
+}
+
+body > nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 2;
+  text-align: top right;
 }

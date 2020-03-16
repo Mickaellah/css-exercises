@@ -1,14 +1,26 @@
-footer ul {
-  background-image: url("../images/icon-twitter.png"),
-                    url("../images/icon-facebook.png"),
-                    url("../images/icon-github.png");
-  background-repeat: no-repeat,
-                     no-repeat,
-                     no-repeat;
-  background-size: 1rem,
-                   1rem,
-                   1rem;
-  background-position: 10rem 15rem,
-                       12rem 9rem,
-                       16rem 7rem;
+/* This element is most likely an anchor. We use the `href` of the anchor as the key to the source of the background image `url()` */
+
+
+.icon {
+  width: 79px;
+  height: 79px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+
+.icon[href^="https://www.twitter.com/jesse"] {
+  background-image: url("../images/icon-twitter.png");
+}
+
+.icon[href^="https://www.facebook.com/jesse"] {
+  background-image: url("../images/icon-facebook.png");
+}
+
+.icon[href^="https://www.github.com/jesse"] {
+  background-image: url("../images/icon-github.png");
 }

@@ -1,15 +1,37 @@
 footer {
   border: 0.7px solid black;
+  padding-block-start: 7.5srem;
+  padding-block-end: 7.5rem;
 }
 
-h4 {
-  margin-block-start: 1rem;
-  margin-inline-start: 15rem;
-  line-height: 0.7rem;
+footer {
+  text-align: center;
+  padding-block-start: 6rem;
+  padding-block-end: 6rem;
 }
 
 footer ul {
-  list-style-type: none;
+  list-style: none;
+  margin: 0rem;
+  padding: 0rem;
+  margin-block-start: 0rem;
+  margin-block-end: 2rem;
+  margin-inline-start: 0rem;
+  margin-inline-end: 0rem;
 }
+
+footer li {
+  display: inline;
+}
+
+footer li:not(:first-child):not(:last-child) {
+  margin-inline-start: 2rem;
+  margin-inline-end: 2rem;
+}
+
+footer p {
+  color: gray;
+}
+
 
 

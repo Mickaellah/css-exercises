@@ -1,37 +1,53 @@
+
+
 h3 a {
   text-decoration: none;
   color: black;
 }
 
-section * {
-  text-align: center;
-}
 
 section p {
   font-size: smaller;
 }
 
 .post-1 {
-  border: 0.7px solid black;
+  border: 0.7px solid gray;
+  text-align: center;
+  height: 12rem;
+
 }
 
 .post-1 small {
   font-size: x-small;
+  color: gray;
+}
+
+.post-1 a {
+  text-decoration: none;
+  color: black;
 }
 
 .post-2 {
-  border: 0.7px solid black;
+  border: 0.7px solid gray;
+  text-align: center;
+  height: 12rem;
 }
 
 .post-2 small {
   font-size: x-small;
+  color: gray;
+}
+
+.post-2 a {
+  text-decoration: none;
+  color: black;
 }
 
 .older {
   text-align: right;
   text-transform: uppercase;
   margin-right: 3rem;
-  color: black;
+  color: white;
 }
 
 
