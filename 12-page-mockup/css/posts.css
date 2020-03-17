@@ -13,8 +13,8 @@ section p {
 .post-1 {
   border: 0.7px solid gray;
   text-align: center;
-  height: 12rem;
-
+  height: 16rem;
+  font-family: sans-serif;
 }
 
 .post-1 small {
@@ -30,7 +30,8 @@ section p {
 .post-2 {
   border: 0.7px solid gray;
   text-align: center;
-  height: 12rem;
+  height: 16rem;
+  font-family: sans-serif;
 }
 
 .post-2 small {
