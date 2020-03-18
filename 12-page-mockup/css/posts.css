@@ -1,8 +1,8 @@
 
-
 h3 a {
   text-decoration: none;
   color: black;
+  font-size: large;
 }
 
 
@@ -18,7 +18,7 @@ section p {
 }
 
 .post-1 small {
-  font-size: x-small;
+  font-size: small;
   color: gray;
 }
 
@@ -35,7 +35,7 @@ section p {
 }
 
 .post-2 small {
-  font-size: x-small;
+  font-size: small;
   color: gray;
 }
 
@@ -44,11 +44,20 @@ section p {
   color: black;
 }
 
-.older {
+/*.older {
   text-align: right;
   text-transform: uppercase;
   margin-right: 3rem;
   color: white;
+}*/
+
+a[href^="older-posts/jesse"] {
+  text-align: end;
+  text-transform: uppercase;
+  color: white;
+  background-color: blue;
+
+
 }
 
 
