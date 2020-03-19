@@ -18,3 +18,49 @@
     2. Major clause `<h3>` in a new `<section>`
     …
 */
+
+
+
+body {
+  counter-reset: section;
+}
+
+h3 {
+  counter-reset: subsection;
+}
+
+
+h3::before {
+  counter-increment: section;
+  content: counter(section) ". ";
+}
+
+
+h4::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) ". ";
+}
+
+h4 {
+  counter-reset: alphabeticList;
+}
+
+li::before {
+  counter-increment: alphabeticList;
+  content: counter(section) "." counter(subsection) ". " counter(alphabeticList, lower-alpha) ". ";
+}
+
+li {
+  list-style: none;
+}
+
+li > ol li::before {
+  counter-increment: roman-numeral;
+  content: counter(section) "." counter(subsection) "." counter(alphabeticList, lower-alpha) "." counter(roman-numeral, lower-roman) ". ";
+  list-style-type: lower-roman;
+}
+
+
+li ol li {
+  list-style-type: lower-roman;
+}
