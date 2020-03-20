@@ -1,15 +1,13 @@
 /* Styles for all mediums go here */
 @media all {
-  body {
-    font-size: medium;
-    line-height: 0.8rem;
-  }
+
 }
 
 /* Only styles for printers please */
 @media print {
-  a[href^="https://en.wikipedia.org/wiki/Tenrec"]:after {
+  a::after {
     content: " (" attr(href) ") ";
+    word-break: break-word;
   }
 }
 

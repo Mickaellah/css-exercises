@@ -25,14 +25,14 @@ body {
   counter-reset: section;
 }
 
-h3 {
-  counter-reset: subsection;
-}
-
 
 h3::before {
   counter-increment: section;
   content: counter(section) ". ";
+}
+
+h3 {
+  counter-reset: subsection;
 }
 
 
@@ -42,25 +42,28 @@ h4::before {
 }
 
 h4 {
-  counter-reset: alphabeticList;
+  counter-reset: alphabeticlist;
 }
 
 li::before {
-  counter-increment: alphabeticList;
-  content: counter(section) "." counter(subsection) ". " counter(alphabeticList, lower-alpha) ". ";
+  counter-increment: alphabeticlist;
+  content: counter(section) "." counter(subsection) ". " counter(alphabeticlist, lower-alpha) ". ";
 }
 
-li {
+body li {
   list-style: none;
 }
 
-li > ol li::before {
-  counter-increment: roman-numeral;
-  content: counter(section) "." counter(subsection) "." counter(alphabeticList, lower-alpha) "." counter(roman-numeral, lower-roman) ". ";
-  list-style-type: lower-roman;
+ol {
+  counter-reset: nested-list;
+}
+
+li li::before {
+  counter-increment: nested-list;
+  content: counter(section) "." counter(subsection) "." counter(alphabeticlist, lower-alpha) "." counter(nested-list, lower-roman) ". ";
 }
 
 
-li ol li {
-  list-style-type: lower-roman;
-}
+
+
+
