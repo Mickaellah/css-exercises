@@ -1,0 +1,33 @@
+html {
+  border: 1px solid black;
+  width: 600px;
+  margin-inline-start: 25rem;
+  margin-block-start: 1rem;
+}
+
+
+section {
+  display: table;
+  width: 600px;
+}
+
+
+h2,
+p {
+  display: table-cell;
+}
+
+
+h2 {
+  width: 200px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+p {
+  width: 400px;
+  padding-block-start: 1.3rem;
+  padding-inline-end: 1rem;
+
+}
