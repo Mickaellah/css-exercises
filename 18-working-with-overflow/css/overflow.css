@@ -1,1 +1,10 @@
+#overflow_invisible .example {
+  overflow: hidden;
+}
 
+
+#overflow_scroll .example {
+  width: 15rem;
+  height: 13rem;
+  overflow: scroll;
+}
