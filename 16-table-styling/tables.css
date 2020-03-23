@@ -1,33 +1,32 @@
 html {
   border: 1px solid black;
-  width: 600px;
-  margin-inline-start: 25rem;
   margin-block-start: 1rem;
 }
 
 
 section {
   display: table;
-  width: 600px;
+  table-layout: auto;
 }
 
 
 h2,
 p {
-  display: table-cell;
+  display: table-row;
 }
 
 
 h2 {
-  width: 200px;
+  display: table-cell;
   vertical-align: middle;
-  text-align: center;
+  text-align: end;
+  min-width: 200px;
 }
 
 
 p {
-  width: 400px;
+  display: table-cell;
   padding-block-start: 1.3rem;
-  padding-inline-end: 1rem;
-
+  padding-inline-start: 1rem;
+  min-width: 400px;
 }
