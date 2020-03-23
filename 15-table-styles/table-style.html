@@ -93,10 +93,10 @@
               Possible downsides of using the various table values for display on a set of elements are:
               <ol>
                 <li>
-                  Inconsistent handling by browsers.
+                  If you have tabular data you cannot use CSS table, but instead use HTML table.
                 </li>
                 <li>
-                  Design maintensnce later on.
+                  Inconsistent handling by browsers.
                 </li>
               </ol>
             </li>
@@ -112,7 +112,7 @@
               </ul>
             </li>
             <li>
-
+              We can use <q>border-spacing</q> with non-table elements if only we set display: table; or display: table-cell, etc.
             </li>
             <li>
               Empty-cells requires other declaration before it can work effectively and that is border-collapse property with its default value which is separate.
