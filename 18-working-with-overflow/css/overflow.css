@@ -4,7 +4,33 @@
 
 
 #overflow_scroll .example {
-  width: 15rem;
-  height: 13rem;
   overflow: scroll;
+}
+
+#clipping_circle img {
+  clip-path: circle(7% at 64.5% 25%);
+}
+
+
+
+#clipping_poly img {
+  clip-path: polygon(60% 30%, 95% 50%, 70% 90%);
+
+}
+
+
+#overclip img {
+  clip-path: circle(7% at 64.5% 25%);
+}
+
+#overclip {
+  overflow: hidden;
+}
+
+
+
+#overflow_ellipsis .example{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
