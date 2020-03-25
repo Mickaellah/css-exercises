@@ -1,0 +1,35 @@
+nav  ol {
+    padding: 10px 16px;
+    list-style: none;
+    background-color:lightgray;
+    text-decoration: none;
+}
+
+
+nav ol li {
+  display: inline;
+  font-size: 16px;
+}
+
+nav li+li::before {
+  padding: 10px;
+  color: darkblue;
+  content: ">";
+}
+
+nav li a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+
+nav span {
+  display: none;
+}
+
+

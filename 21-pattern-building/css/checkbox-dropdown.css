@@ -1,0 +1,20 @@
+
+.dropdown_contents {
+  visibility: collapse;
+}
+
+#dropdown_checkbox:checked ~ .dropdown_contents {
+  visibility: visible;
+}
+
+ul li {
+  /*text-decoration: none;*/
+  list-style: none;
+}
+
+
+
+
+
+
+
