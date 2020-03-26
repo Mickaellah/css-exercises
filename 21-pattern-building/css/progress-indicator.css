@@ -1,0 +1,71 @@
+div .progress_indicator a {
+  text-decoration: none;
+  display: block;
+}
+
+
+div .progress_indicator a span {
+  display: none;
+}
+
+div .progress_indicator li span span {
+  display: none;
+}
+
+
+div .progress_indicator li:nth-of-type(2) span {
+  display: none;
+}
+
+div .progress_indicator li {
+  list-style: none;
+  display: inline-block;
+  text-align: center ;
+  padding: 2rem;
+}
+
+
+div ol.progress_indicator li::before {
+  content: "1";
+  width: 25px;
+  height: 25px;
+}
+
+
+div ol.progress_indicator li::before {
+  content: "1";
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  display: block;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  line-height: 27px;
+  background: white;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+
+}
+
+
+div ol.progress_indicator {
+  counter-reset: step;
+}
+
+div ol.progress_indicator li::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 30px;
+  height: 30px;
+  border: 2px solid black;
+  display: block;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  line-height: 27px;
+  background: white;
+  color: black;
+  text-align: center;
+  font-weight: 500;
+
+}

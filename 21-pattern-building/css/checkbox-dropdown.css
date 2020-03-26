@@ -3,13 +3,28 @@
   visibility: collapse;
 }
 
-#dropdown_checkbox:checked ~ .dropdown_contents {
+#dropdown_checkbox:checked ~ * ul li a {
   visibility: visible;
+  text-decoration: none;
+  color: black;
 }
 
 ul li {
-  /*text-decoration: none;*/
   list-style: none;
+}
+
+
+label::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-block-start: 7px solid gray;
+  border-block-end: 7px soli transparent;
+  border-inline-start: 7px solid transparent;
+  border-inline-end: 7px solid transparent;
+  position: absolute;
+  margin-left: 0.5rem;
+  margin-block-start: 0.6rem;
 }
 
 

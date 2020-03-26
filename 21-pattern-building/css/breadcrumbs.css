@@ -1,8 +1,10 @@
-nav  ol {
-    padding: 10px 16px;
-    list-style: none;
-    background-color:lightgray;
-    text-decoration: none;
+nav ol {
+  padding: 16px 16px;
+  list-style: none;
+  background-color:lightgray;
+  text-decoration: none;
+  border: solid blue 2px;
+
 }
 
 
@@ -12,8 +14,7 @@ nav ol li {
 }
 
 nav li+li::before {
-  padding: 10px;
-  color: darkblue;
+  padding: 16px;
   content: ">";
 }
 
