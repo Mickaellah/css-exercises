@@ -1,0 +1,48 @@
+section:nth-of-type(2) .container {
+  max-width: 202px;
+  height: 202px;
+}
+
+
+
+section:nth-of-type(2) .container {
+  position: relative;
+  top: ;
+  right: ;
+  bottom: ;
+  left: ;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+section:nth-of-type(2) .cirle {
+  top: ;
+  right: 8rem;
+  bottom: 10rem;
+  left: ;
+  clip-path: circle(25% at 64.5% 25%);
+}
+
+
+/*section:nth-of-type(2) .container .cirle:nth-of-type(2) {
+  bottom: 10rem;
+  left: 8rem;
+}
+
+
+section:nth-of-type(2) .container .cirle:nth-of-type(3) {
+  top: 10rem;
+  left: 8rem;
+}
+
+
+section:nth-of-type(2) .container .cirle:last-of-type {
+  top: 10rem;
+  right: 8rem;
+}*/
+
+
+

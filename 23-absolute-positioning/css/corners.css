@@ -1,0 +1,58 @@
+section:first-of-type .container {
+  width: 202px;
+  height: 202px;
+}
+
+
+section:first-of-type .container .circle {
+  position: relative;
+  top: 9.5rem;
+  right: 0;
+  bottom: 0;
+  left: 9.4rem;
+  width: 25%;
+  height: 25%;
+  overflow: auto;
+  z-index: 1;
+}
+
+
+ section:first-of-type .container .rect {
+  position: relative;
+  top: ;
+  right: 3.5rem;
+  bottom: 0;
+  left: ;
+  width: 25%;
+  height: 25%;
+  overflow: auto;
+  z-index: 1;
+}
+
+
+section:first-of-type .container .pipe {
+  position: relative;
+  top: 9.5rem;
+  right: 6.8rem;
+  bottom: 0;
+  left: ;
+  width: 25%;
+  height: 25%;
+  overflow: auto;
+  z-index: 1;
+}
+
+
+section:first-of-type .container .bar {
+  position: relative;
+  top: rem;
+  right: 0;
+  bottom: 3.5rem;
+  left: 9.4rem;
+  width: 25%;
+  height: 25%;
+  overflow: auto;
+  z-index: 1;
+}
+
+
