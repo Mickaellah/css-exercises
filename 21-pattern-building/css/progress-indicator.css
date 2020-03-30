@@ -1,71 +1,91 @@
-div .progress_indicator a {
-  text-decoration: none;
-  display: block;
+.a11y {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  white-space: nowrap;
 }
 
 
-div .progress_indicator a span {
-  display: none;
-}
-
-div .progress_indicator li span span {
-  display: none;
-}
-
-
-div .progress_indicator li:nth-of-type(2) span {
-  display: none;
-}
-
-div .progress_indicator li {
+.progress_indicator {
   list-style: none;
-  display: inline-block;
-  text-align: center ;
-  padding: 2rem;
+  padding: 0;
+  margin: 0;
+  position: relative;
 }
 
-
-div ol.progress_indicator li::before {
-  content: "1";
-  width: 25px;
-  height: 25px;
+.progress_indicator li {
+  counter-increment: step_number;
 }
 
+/*
+1. Back links - has an anchor
+2. Current step - has bold
+3. Future step - spans
+*/
 
-div ol.progress_indicator li::before {
-  content: "1";
-  width: 30px;
-  height: 30px;
-  border: 2px solid black;
+.progress_indicator li > * {
   display: block;
-  margin: 0 auto 10px auto;
-  border-radius: 50%;
-  line-height: 27px;
-  background: white;
-  color: black;
-  text-align: center;
-  font-weight: 500;
+  padding: 1rem;
+  color: #000;
+  padding-inline-start: 3rem;
+  position: relative;
+}
 
+.progress_indicator li > *::before {
+  content: counter(step_number);
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: -0.75rem;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1rem;
+  border-radius: 50%;
 }
 
 
-div ol.progress_indicator {
-  counter-reset: step;
+/* Back link, or previous steps */
+.progress_indicator a {
+  text-decoration: none;
 }
 
-div ol.progress_indicator li::before {
-  content: counter(step);
-  counter-increment: step;
-  width: 30px;
-  height: 30px;
-  border: 2px solid black;
-  display: block;
-  margin: 0 auto 10px auto;
-  border-radius: 50%;
-  line-height: 27px;
-  background: white;
-  color: black;
-  text-align: center;
-  font-weight: 500;
+.progress_indicator a::before {
+  background-color: green;
+  color: #fff;
+}
 
+/* Current step */
+.progress_indicator b {
+
+}
+
+.progress_indicator b::before {
+  background-color: gold;
+}
+
+/* Future step */
+.progress_indicator span {
+  opacity: 0.75;
+}
+
+.progress_indicator span::before {
+  background-color: darkblue;
+  color: #fff;
+}
+
+
+.progress_indicator::after {
+  content: "";
+  width: 0.25rem;
+  position: absolute;
+  top: 1rem;
+  left: 1.75rem;
+  bottom: 1rem;
+  background-color: #ccc;
+  margin-inline-start: -0.125rem;
+  z-index: -1;
 }

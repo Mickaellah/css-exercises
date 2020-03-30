@@ -1,29 +1,32 @@
 .icon_left::before {
+  position: absolute;
   content: "";
   background-image: url("../../12-page-mockup/images/icon-facebook.png");
-  width: 1rem;
-  height: 1rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  width: 1.5rem;
+  height: 1.5rem;
   background-size: contain;
   border-radius: 50%;
-  display: inline-block;
+  display: block;
   margin-right: 1rem;
+  top: 50%;
+  margin-top: -0.75rem;
+  left: 0.75rem;
 }
 
 
 
 .icon_right::after {
+  position: absolute;
   content: "";
   background-image: url("../../12-page-mockup/images/icon-facebook.png");
-  width: 1rem;
-  height: 1rem;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  width: 1.5rem;
+  height: 1.5rem;
   background-size: contain;
   border-radius: 50%;
-  display: inline-block;
-  margin-left: 1rem;
+  display: block;
+  top: 50%;
+  margin-top: -0.75rem;
+  right: 0.75rem;
 }
 
 a.icon {
@@ -32,8 +35,34 @@ a.icon {
   border: purple solid 2px;
   padding: 1rem;
   background-color: skyblue;
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+  border-radius: 7%;
 
 }
+
+a {
+  display: inline-block;
+}
+
+a.icon_left {
+  position: relative;
+  padding-inline-start: 3rem;
+
+}
+
+
+a.icon_right {
+  position: relative;
+  padding-inline-end: 3rem;
+
+}
+
+
+
+
+
 
 
 
