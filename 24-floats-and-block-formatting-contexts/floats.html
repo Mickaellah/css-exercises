@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>
+      Document
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Understanding floats and block formatting context.
+      </h1>
+    </header>
+    <main>
+      <article>
+        <header>
+          <h2>
+            Floats
+          </h2>
+        </header>
+        <nav>
+          <ol>
+            <li>
+              The difault value of float and clear is none.
+            </li>
+            <li>
+              Clear property have quite lots of possible values:
+              <ul>
+                <li>
+                  none
+                </li>
+                <li>
+                  both
+                </li>
+                <li>
+                  left
+                </li>
+                <li>
+                  right
+                </li>
+                <li>
+                  inline-start
+                </li>
+                <li>
+                  inline-end
+                </li>
+                <li>
+                  inherit
+                </li>
+              </ul>
+            </li>
+            <li>
+              The rule associated with a floated item in terms of source order is that the floated element must comes first, before the others.
+            </li>
+            <li>
+              Yes, we can float other elements besides images.
+            </li>
+            <li>
+              I think we can us float to create a two-column layout.
+            </li>
+          </ol>
+        </nav>
+      </article>
+      <article>
+        <header>
+          <h2>
+            BFC (block formatting context)
+          </h2>
+        </header>
+        <nav>
+          <ol>
+            <li>
+              BFC is all about layout of block boxes in which floats interact with other elements. It is set of rules on how container should contain its contents.
+            </li>
+            <li>
+              We can <q>clear</q> a float by creating a block formatting context on the parent, this is achieved by putting a certain set of properties on the container. Those are the properties we need to use with that:
+              <ul>
+                <li>position: absolute;</li>
+                <li>display: flow_root;</li>
+              </ul>
+            </li>
+            <li>
+              I do not know yet.
+            </li>
+          </ol>
+        </nav>
+      </article>
+    </main>
+  </body>
+</html>
