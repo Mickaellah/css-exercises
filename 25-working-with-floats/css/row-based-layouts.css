@@ -1,0 +1,44 @@
+form .form_toolbar {
+  float: right;
+}
+
+
+section:nth-last-child(1) .container header {
+  float: left;
+  line-height: 36px;
+}
+
+
+form header h3 {
+  margin-block-start: 0rem;
+  margin-inline-end: 1rem;
+  float: left;
+
+
+}
+
+.form_row label {
+  float: left;
+  line-height: 39px;
+  width: 9rem;
+  text-align: right;
+  margin-block-start: 1rem;
+}
+
+input {
+ /* float: right;*/
+  margin: 1rem;
+
+}
+
+.form_row {
+  clear: both;
+}
+
+button[value="save"] {
+  margin-inline-start: 10rem;
+}
+
+
+
+
