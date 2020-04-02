@@ -1,0 +1,35 @@
+section {
+  width: 250px;
+  display: flex;
+  height: 200px;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  border: 3px solid hotpink;
+}
+
+p {
+  height: 60px;
+  background: cornflowerblue;
+  margin: 5px;
+  text-align: center;
+}
+
+p:nth-child(2) {
+  align-self: flex-end;
+  order: 3;
+  border: 2px solid purple;
+}
+
+
+p:nth-child(1) {
+  flex-basis: 200px;
+  flex-shrink: 2;
+  border: 2px solid cyan;
+}
+
+p:nth-child(3) {
+  flex-shrink: 4;
+  border: 2px solid crimson;
+}
+
+
