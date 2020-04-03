@@ -1,3 +1,21 @@
 article {
   max-width: 50rem;
 }
+
+
+main > article:first-of-type {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  margin-block-start: 3.5rem;
+}
+
+main > article:last-of-type {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+}
+
+
+
+

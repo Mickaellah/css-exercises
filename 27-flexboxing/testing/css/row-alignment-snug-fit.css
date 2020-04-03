@@ -1,0 +1,24 @@
+section:first-of-type .container {
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  align-items: center;
+}
+
+section:first-of-type .container .circle {
+  align-self: flex-end;
+}
+
+
+section:first-of-type .container .pipe {
+  align-self: flex-start;
+  margin-block-start: 10rem;
+}
+
+section:first-of-type .container .rect {
+  align-self: stretch;
+  order: 3;
+  flex-shrink: 3;
+}
+
+

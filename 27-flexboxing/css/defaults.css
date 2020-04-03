@@ -6,6 +6,7 @@ html {
 
 body {
   margin: 0;
+  border: 1px solid black;
 }
 
 .a11y {

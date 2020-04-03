@@ -7,3 +7,20 @@ footer ul {
 footer p {
   color: #999;
 }
+
+footer > nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-block-start: 3rem;
+}
+
+
+footer > p {
+  display: flex;
+  justify-content: center;
+}
+
+footer > nav > ul > li {
+  margin: 0.5rem;
+}
