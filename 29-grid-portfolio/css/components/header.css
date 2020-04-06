@@ -36,3 +36,23 @@ body > header ul {
 body > header li {
   border-block-end: 1px solid #4d4d4d;
 }
+
+body > header {
+  display: grid;
+  grid-template-columns: repeat(6, 9rem);
+  column-gap: 16px;
+}
+
+body > header > nav > ul {
+  display: grid;
+  grid-template-columns: repeat(5, 9rem);
+  column-gap: 16px;
+  margin-block-start: 2.7rem;
+}
+
+
+body {
+  margin-inline-start: 45px;
+}
+
+
