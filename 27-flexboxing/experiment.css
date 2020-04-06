@@ -4,54 +4,89 @@
   grid-template-rows: 48px 48px 48px;
   grid-gap: 20px;
   grid-template-columns: repeat(6 2fr);
+  text-align: center;
+  grid-auto-flow: column;
 }
 
 .father {
   background-color: blue;
   border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .mother {
-  background-color: cadetblue;
+  background-color: cyan;
   border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .edra {
-  background-color: crimson;
+  background-color: greenyellow;
   border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clopedia {
   background-color: hotpink;
   border: 2px solid black;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fredericka {
   background-color: lightgreen;
   border: 2px solid black;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .noelah {
   background-color: yellow;
   border: 2px solid black;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .lucie {
   background-color: violet;
   border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rismanah {
   background-color: turquoise;
   border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sylvia {
   background-color: tomato;
   border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.marcellin {
+  background-color: darkorange;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
