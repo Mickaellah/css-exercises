@@ -18,6 +18,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 5px);
+  grid-column-gap: 15px;
+  column-gap: 15px;
+  margin-inline-start: -1rem;
 }
 
 .works_item_navigation a {
@@ -30,4 +35,12 @@
 .works_item_navigation a b,
 .works_item_navigation a:hover {
   color: #fff18f;
+}
+
+.works_item {
+  display: grid;
+  grid-template-columns: 145px auto;
+  grid-column-gap: 15px;
+  column-gap: 15px;
+  margin-block-start: 16px;
 }
