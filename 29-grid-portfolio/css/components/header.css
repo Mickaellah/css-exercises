@@ -39,20 +39,29 @@ body > header li {
 
 body > header {
   display: grid;
-  grid-template-columns: repeat(6, 9rem);
-  column-gap: 16px;
-}
-
-body > header > nav > ul {
-  display: grid;
-  grid-template-columns: repeat(5, 9rem);
-  column-gap: 16px;
-  margin-block-start: 2.7rem;
+  grid-template-columns: repeat(6, 145px);
+  grid-column-gap: 15px;
+  column-gap: 15px;
+  align-items: end;
 }
 
 
 body {
   margin-inline-start: 45px;
 }
+
+body > header > nav > ul {
+  display: grid;
+  grid-template-columns: repeat(5, 145px);
+  grid-column-gap: 15px;
+  column-gap: 15px;
+}
+
+body > header > h1{
+  margin: 0;
+}
+
+
+
 
 

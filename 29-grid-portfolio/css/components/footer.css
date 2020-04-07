@@ -15,3 +15,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
+
+footer > p > a {
+  text-decoration: none;
+}
