@@ -1,3 +1,20 @@
 .about {
 
 }
+
+main {
+  display: grid;
+  grid-template-columns: 145px 305px 480px;
+  grid-column-gap: 15px;
+  column-gap: 15px;
+  margin-block-start: 16px;
+}
+
+
+main > header > h2 {
+  margin: 0;
+}
+
+main > div > p {
+  margin: 0;
+}
