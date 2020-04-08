@@ -1,4 +1,12 @@
 .post {
+  display: grid;
+  grid-template-columns: repeat(6, 145px);
+  grid-column-gap: 15px;
+  column-gap: 15px;
+  grid-template-areas: "header header header header header header"
+  "footer content content content content content"
+  "footer content content content content content";
+
 
 }
 
@@ -7,16 +15,20 @@
 }
 
 .post header {
+  grid-area: header;
+  grid-column: 2 / 7;
 
 }
 
 .post_content {
+  grid-area: content;
 
 }
 
 /* This element doubles as the post meta block. Links, metadata, etc */
 .post footer {
   font-size: 0.75rem;
+  grid-area: footer;
 }
 
 .post_date {
@@ -63,3 +75,31 @@
   height: 1px;
   background-color: #4d4d4d;
 }
+
+
+.post:nth-of-type(odd) .image_half {
+  float: left;
+  margin-inline-end: 15px;
+}
+
+.post:nth-of-type(even) .image_half {
+  float: right;
+  margin-inline-start: 15px;
+}
+
+
+.post:not(:last-of-type) > footer {
+  border-bottom: 1px solid gray;
+}
+
+
+.post:not(:last-of-type) .post_content {
+  border-bottom: 1px solid gray;
+}
+
+.post {
+  margin-block-start: 16px;
+}
+
+
+
