@@ -37,7 +37,7 @@ body > footer p:last-child a::before {
 }
 
 
-footer {
+body > footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -46,3 +46,4 @@ footer {
 footer > p > a {
   text-decoration: none;
 }
+
