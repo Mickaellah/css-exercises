@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      --base-color: purple;
+      --base-font-size: 1rem;
+    }
+
+    h1 {
+      color: var(--base-color);
+      font-size: calc(var(--base-font-size) * 2);
+    }
+
+    div {
+      font-size: var(--base-font-size);
+    }
+
+  </style>
+
+
+</head>
+<body>
+  <header>
+    <h1>
+      Learning more about the <code>calc()</code> function in css.
+    </h1>
+  </header>
+  <div>
+    <ol>
+      <li>
+        For my understanding, a <code>calc()</code> function supports mathematical expression as its value.
+      </li>
+      <li>
+        For us to control a mathematical order of operation (PEDMAS / BODMAS) in the function like the following example <code>calc(2 + 3 * 4)</code> equal to <code>14</code> while it also could be equal to <code>20</code>, we rewrite the <code>calc()</code> function like this <code>calc((2 + 3) * 4)</code> to give the result <code>20</code>.
+      </li>
+      <li>
+        I am not surethat we can use <code>cal()</code> function to convert one type of unit to one another type of unit.
+      </li>
+      <li>
+        If we want to convert a unitless number to a unit value, we have to multiply the unitless number by <code>1</code> with the unit which we want to use.
+      </li>
+      <li>
+        The <b>plus</b> and <b>minus</b> operators inside the function need spaces around them because the number after the <b>plus</b> or <b>minus</b> sign will be considered as just as a negative or positive number.
+      </li>
+      <li>
+        To convert a value into a negative value, we multiply the value by <code>-1</code>.
+      </li>
+      <li>
+        I think <code>calc()</code> can work with colour values by playing with the colour values' <code>rgba()</code>.
+      </li>
+    </ol>
+  </div>
+
+</body>
+</html>
