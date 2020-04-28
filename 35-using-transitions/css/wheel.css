@@ -2,17 +2,25 @@
   --spoke-arc: 45deg;
   --spoke-width: 6px;
   --tyre-thickness: 10px;
-  --wheel-diameter: 100px;
-  --wheel-radius: calc(var(--wheel-diameter) / 2);
+  --wheel-diameter: 100;
+  --wheel-diameter-pixels: calc(var(--wheel-diameter) * 1px);
+  --max-sceen-width: 1000;
+  --max-sceen-width-pixels: calc(var(--max-sceen-width) * 1px);
+  --pi: 22 / 7;
+  --circumference: calc(var(--pi) * var(--wheel-diameter-pixels));
+  --travel-distance: var(--wheel-diameter-pixels);
+  --circus: calc(var(--max-sceen-width-pixels) / var(--circumference));
+  --rotation-length: calc(var(--max-sceen-width-pixels) / var(--circus));
+  --rotation-in-degrees: calc(var(--rotation-length) * 360deg)
 }
 
 .scene {
   background-color: skyblue;
   border-bottom: 5px solid green;
-  height: var(--wheel-diameter);
+  height: var(--wheel-diameter-pixels);
   position: relative;
   overflow: hidden;
-  max-width: 1000px;
+  max-width: var(--max-sceen-width-pixels);
 }
 
 /*
@@ -20,11 +28,13 @@
   rotate the wheel and move it off canvas to the right.
 */
 .scene .wheel {
-  transition: linear 10s;
+  transition-duration: 5s;
+  transition-timing-function: linear;
+  transform: rotate(0);
 }
 .scene:hover .wheel {
   left: 100%;
-  transform: rotate();
+  transform: rotate(360deg);
   transition-duration: 10s;
   transition-timing-function: ease-in;
   transition-delay: 0.5s;
@@ -41,8 +51,8 @@
   border-radius: 50%;
   border: var(--tyre-thickness) solid #555;
   box-sizing: border-box;
-  height: var(--wheel-diameter);
-  width: var(--wheel-diameter);
+  height: var(--wheel-diameter-pixels);
+  width: var(--wheel-diameter-pixels);
   position: relative;
 }
 
