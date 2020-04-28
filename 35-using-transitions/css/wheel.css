@@ -19,9 +19,19 @@
   When the user hovers over the scene,
   rotate the wheel and move it off canvas to the right.
 */
+.scene .wheel {
+  transition: linear 10s;
+}
 .scene:hover .wheel {
   left: 100%;
+  transform: rotate();
+  transition-duration: 10s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.5s;
 }
+
+
+
 
 /* Wheel setup */
 .wheel {

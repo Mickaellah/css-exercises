@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html {
+      width: 135px;
+      height: 60px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+    .good {
+      display: inline-block;
+      border: 2px solid black;
+      background-color: hotpink;
+      transition-duration: 5s;
+      transition-timing-function: linear;
+      transition-delay: 1s;
+    }
+
+
+    .good:hover {
+      background-color: lawngreen;
+      top: 70%;
+      left: 50%;
+      transform: scale(0.7);
+    }
+
+    .bad {
+      border: 0.5px solid black;
+      background-color: yellow;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.5s;
+  }
+
+    .bad:hover {
+      background-color: aqua;
+      border: brown solid 1px;
+      border-radius: 15%;
+      color: darkorange;
+
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p class="object good">
+      cool
+    </p>
+    <p class="object bad">
+      nasty
+    </p>
+  </div>
+</body>
+</html>
