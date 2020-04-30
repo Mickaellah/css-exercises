@@ -21,12 +21,13 @@
       transition-delay: 1s;
     }
 
-
     .good:hover {
-      background-color: lawngreen;
-      top: 70%;
-      left: 50%;
-      transform: scale(0.7);
+      transform: translate(100vw) rotate(-45deg);
+      background-color: tomato;
+      right: 70%;
+      transition-duration: 5s;
+      transition-timing-function: linear;
+      transition-delay: 0s;
     }
 
     .bad {
@@ -42,16 +43,20 @@
       border: brown solid 1px;
       border-radius: 15%;
       color: darkorange;
+      transition-duration: 3s;
+      transition-timing-function: ease-in;
+      transition-delay: 0s;
+      transform: translateY(70vh);
 
     }
   </style>
 </head>
 <body>
   <div>
-    <p class="object good">
+    <p class="good">
       cool
     </p>
-    <p class="object bad">
+    <p class="bad">
       nasty
     </p>
   </div>
