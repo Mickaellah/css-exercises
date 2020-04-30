@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research about how transform works.</title>
+</head>
+<body>
+
+  <main>
+    <header>
+      <h1>
+        More about transform property.
+      </h1>
+    </header>
+    <div>
+      <ol>
+        <li>
+          In a transform's value, we can use
+          <ul>
+            <li>
+              <code>scale()</code>
+            </li>
+            <li>
+              <code>rotate()</code>
+            </li>
+            <li>
+              <code>translate()</code>
+            </li>
+            <li>
+              <code>skew()</code>
+            </li>
+            <li>
+              <code>perspective()</code>
+            </li>
+            <li>
+              <code>matrix()</code>
+            </li>
+          </ul>
+        </li>
+        <li>
+          we have to use separate functions, in order, and as values because problems may appear if your function is not in order, an also the first will be ignored, the second transform will override the first one.
+        </li>
+        <li>
+          When we want to move the central pin or axis of the transform away from its default position.we use <code>transform-origin</code> to do that.
+        </li>
+        <li>
+          We use <code>tranform: translate();</code> rather than <code>position</code> because
+          <ul>
+            <li>
+              <code>transform: translate();</code> is not involved layout and have better performance.
+            </li>
+            <li>
+              <code>position</code> is involved layout.
+            </li>
+          </ul>
+        </li>
+        <li>
+          When an element is translated / transformed, it doesn't affect the flow of the document or other element's flow, it occurs outside of the document's flow. it is quite simiar to flex layout method.
+        </li>
+        <li>
+          When overriding a <code>transform</code> in a more specific selector, problems can be seen because the <code>transform</code> which you set the other selector will be ignored.
+        </li>
+        <li>
+          If we want to go 3D,we need to use <code>transform: matrix3d()</code> property to set the view over the scene.
+        </li>
+        <li>
+          We can control what the transform uses in its calculations in terms of the box model. To adjust that we need to use the <code>transform-box</code>.
+        </li>
+      </ol>
+    </div>
+  </main>
+
+</body>
+</html>
