@@ -69,11 +69,12 @@
 }
 
 .scene:hover #solar-system {
-
 }
 
 .scene:hover #earth-system {
-
+  transition-duration: 0s;
+  transform: translate(-50%, -50%)
+  translate(130%);
 }
 
 .scene:hover #earth {
@@ -83,3 +84,4 @@
 .scene:hover #luna {
 
 }
+
