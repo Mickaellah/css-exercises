@@ -39,7 +39,7 @@
           </ul>
         </li>
         <li>
-          we have to use separate functions, in order, and as values because problems may appear if your function is not in order, an also the first will be ignored, the second transform will override the first one.
+          we have to use separate functions, in order, and as values because computer does not know the order, which one should go first and which is next.
         </li>
         <li>
           When we want to move the central pin or axis of the transform away from its default position.we use <code>transform-origin</code> to do that.
@@ -62,7 +62,7 @@
           When overriding a <code>transform</code> in a more specific selector, problems can be seen because the <code>transform</code> which you set the other selector will be ignored.
         </li>
         <li>
-          If we want to go 3D,we need to use <code>transform: matrix3d()</code> property to set the view over the scene.
+          If we want to go 3D,we need to use <code>transform: perspective()</code> property to set the view over the scene.
         </li>
         <li>
           We can control what the transform uses in its calculations in terms of the box model. To adjust that we need to use the <code>transform-box</code>.
