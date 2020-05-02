@@ -30,6 +30,8 @@
 #solar-system {
   width: var(--solar-system-size);
   height: var(--solar-system-size);
+  transform: rotate(1turn) translate(-50%, -50%) rotateX(75deg);
+
 }
 
 #sun {
@@ -40,10 +42,11 @@
   box-shadow: 0 0 50px 0 rgba(255, 252, 211, 0.9);
 }
 
+
 #earth-system {
   width: var(--earth-system-size);
   height: var(--earth-system-size);
-  transform: translateX(160px) translate(-50%, -50%);
+  transform:  rotate(12turn) translateX(160px) translate(-50%, -50%);
 }
 
 #earth {
@@ -72,20 +75,11 @@
 }
 
 .scene:hover #solar-system {
-  transform: translate(-50%, -50%) rotate(1turn);
+
 }
 
 .scene:hover #earth-system {
-  transform: translateX(160px) translate(-50%, -50%) rotate(12turn);
-}
-
-.scene:hover #earth {
-
 
 }
 
-.scene:hover #luna {
-
-
-}
 
