@@ -16,37 +16,66 @@
       display: inline-block;
       border: 2px solid black;
       background-color: hotpink;
-      transition-duration: 5s;
-      transition-timing-function: linear;
-      transition-delay: 1s;
+      border-radius: 100%;
     }
 
-    .good:hover {
-      transform: translate(100vw) rotate(-45deg);
-      background-color: tomato;
-      right: 70%;
-      transition-duration: 5s;
-      transition-timing-function: linear;
-      transition-delay: 0s;
+    @keyframes good {
+      0% {
+        transform: translateY(30vh) rotate(360deg);
+      }
+      30% {
+        background-color: tomato;
+      }
+
+      50% {
+        transform: translateX(40vw);
+      }
+
+      100% {
+        transform: translateY(70vh);
+      }
+    }
+
+    .good {
+      animation-name: good;
+      animation-duration: 15s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-delay: 0s;
     }
 
     .bad {
       border: 0.5px solid black;
       background-color: yellow;
-      transition-duration: 0.5s;
-      transition-timing-function: ease-in-out;
-      transition-delay: 0.5s;
   }
 
-    .bad:hover {
-      background-color: aqua;
-      border: brown solid 1px;
+  @keyframes bad {
+    0% {
+      transform: translate(0vw);
+    }
+    30% {
       border-radius: 15%;
-      color: darkorange;
-      transition-duration: 3s;
-      transition-timing-function: ease-in;
-      transition-delay: 0s;
-      transform: translateY(70vh);
+    }
+
+    50% {
+      background-color: aqua;
+    }
+
+    70% {
+      border-color: brown;
+    }
+
+    100% {
+      transform: translate(75vw);
+    }
+  }
+
+    .bad {
+      animation-name: bad;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-delay: 0s;
 
     }
   </style>
