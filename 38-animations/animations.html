@@ -6,45 +6,61 @@
   <title>Document</title>
 </head>
 <body>
-  <div>
-    <ol>
-      <li>
-        Keyframe starts with the @ symbol.
-      </li>
-      <li>
-      Keyframes are different to the rest of CSS because it can specify the starting and the ending of the animation.
-      </li>
-      <li>
-        To use the keyframe, we have the <code>0%</code> which means start and <code>100%</code> which means end.
-      </li>
-      <li>
-        Animation have other keywords that aren't available in transition like
-        <ul>
-          <li>
-            Name.
-          </li>
-          <li>
-            Direction.
-          </li>
-          <li>
-            Iteration.
-          </li>
-          <li>
-            Play state.
-          </li>
-          <li>
-            Fill mode.
-          </li>
-        </ul>
-      </li>
-      <li>
-
-      </li>
-      <li>
-        All elements can be animated including pseudo-elements.
-      </li>
-    </ol>
-  </div>
+  <main>
+    <header>
+      <h2>
+        Doing some research on how to use animation and what do we need to include in it.
+      </h2>
+    </header>
+    <div>
+      <ol>
+        <li>
+          Keyframe must start with the <code>@</code> rule.
+        </li>
+        <li>
+        Keyframes are different to the rest of CSS because it can specify the starting and the ending of the animation and also in media queri we have the round brackets, but instead we use curly braces in keyframe.
+        </li>
+        <li>
+          To use the keyframe, we have to create a <code>@keyframes</code> rules with a name that is then used by the animation-name property, and to apply it with an element, we call the animation-name and animation-duration.
+        </li>
+        <li>
+          Animation have other keywords that aren't available in transition like
+          <ul>
+            <li>
+              reverse
+            </li>
+            <li>
+              infinite
+            </li>
+            <li>
+              alternate
+            </li>
+            <li>
+              alternate-reverse
+            </li>
+            <li>
+              play state
+            </li>
+            <li>
+              running
+            </li>
+            <li>
+              paused
+            </li>
+            <li>
+              fill mode
+            </li>
+          </ul>
+        </li>
+        <li>
+          We can animate as many properties as we want if only the properties are animatable.
+        </li>
+        <li>
+          All elements can be animated including pseudo-elements.
+        </li>
+      </ol>
+    </div>
+  </main>
 
 </body>
 </html>
