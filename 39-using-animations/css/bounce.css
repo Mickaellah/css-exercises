@@ -22,7 +22,12 @@
   background-position:
     50% -25px,
     50% 50%;
-  background-repeat: no-repeat;;
+  background-repeat: no-repeat;
+  animation: bounce;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes bounce {
@@ -30,25 +35,29 @@
     transform: translateY(0) scale(1, 1);
     top: 0;
   }
-  50% {
+  20% {
+    top: 20%;
+    right: 25%;
+  }
+  40% {
+    top: 40%;
+    right: 55%;
+  }
+  60% {
     top: 50%;
     transform: scale(1, 1);
   }
+  80% {
+    top: 70%;
+    right: 85%;
+  }
   95% {
-    top: calc(var(--ball-diameter) * 4);
+    top: 85%;
     transform: scale(1, 1);
   }
 
   100% {
     transform: translateY(400px) scale(1.5, .5);
   }
-}
-
-#ball {
-  animation: bounce;
-  animation-duration: .5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
 }
 
