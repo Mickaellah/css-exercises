@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shadow</title>
+  <style>
+    html {
+      width: 50vw;
+      height: 70vh;
+      border: 2px solid black;
+      transform: translate(50%, 25%);
+      box-shadow: 7px 7px 10px 15px navy;
+    }
+
+    h3 {
+      font-family: sans-serif;
+      font-size: 32px;
+      text-shadow: 3px 5px 7px turquoise;
+    }
+
+    nav {
+      text-shadow: 1.5px 3px 4px violet;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <header>
+      <h3>
+        Looking at a new property that is <code>Text-shadow</code> and <code>Box-shadow</code>.
+      </h3>
+    </header>
+
+    <nav>
+      <ol>
+        <li>
+          The difference between <code>text-shadow</code> and <code>box-shadow</code> is that with:
+          <ul>
+            <li>
+              <code>Text-shadow</code>, we cannot apply the <code>inset</code> keyword and also we cannot have thickness with it.
+            </li>
+            <li>
+              <code>Box-shadow</code>, we can have both <code>inset</code> keyword and also thickness value.
+            </li>
+          </ul>
+        </li>
+        <li>
+          If we wanted to create a hard-edge shadow, we have to add the thickness with a big number as a value.
+        </li>
+        <li>
+          Yes, it is possible to create a shadow on a circular element, but we can create in a polygon.
+        </li>
+        <li>
+          Yes, it is possible to create multiple shadows on the same element by using comma to separate the two values and negative values with the second one.
+        </li>
+      </ol>
+    </nav>
+  </main>
+
+</body>
+</html>
