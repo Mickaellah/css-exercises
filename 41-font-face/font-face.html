@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font face.</title>
+</head>
+<body>
+  <nav>
+    <ol>
+      <li>Font file formates:
+        <ul>
+          <li>
+            <code>WOFF2</code>
+          </li>
+          <li>
+            <code>EOT</code>
+          </li>
+          <li>
+            <code>OTF</code>
+          </li>
+          <li>
+            <code>SVG</code>
+          </li>
+        </ul>
+      </li>
+      <li>
+        WOFF and WOFF2 are good candidates to use in all browsers.
+      </li>
+      <li>
+        The difference between @font-face and the other @-blocks are:
+        <ul>
+          <li>
+            We don't need to give a name with @font-face
+          </li>
+          <li>Some @font-face need licence whereas other @-blocks don't need.</li>
+          <li>
+            @font-face cannot be declared within a CSS selector.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <b>Licencing restrictions</b><br>
+        This means that fonts cannot be used without permission from whose people who created the fonts.
+      </li>
+      <li>
+        To supprort all those chosen fonts, we need to make the use of 8 font-face blocks
+      </li>
+      <li>
+        Our users have to download 160KB in the example above.
+      </li>
+      <li>
+        If we chose to offer WOFF2 as well as WOFF, we need to have need to specify both: <br>
+        <u>Eg</u>:<br>
+        <code>
+          @font-face {
+            font-family: Roboto;
+            src: url('./Roboto.woff2') format(woff2),
+                 url('./Roboto.woff') format(woff);
+          }
+        </code>
+      </li>
+      <li></li>
+      <li></li>
+    </ol>
+  </nav>
+
+</body>
+</html>
