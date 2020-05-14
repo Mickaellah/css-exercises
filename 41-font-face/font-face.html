@@ -61,13 +61,13 @@
         </code>
       </li>
       <li>
-
+        For us to be sure that user's browser doesn't download the fonts they might already have, we place the <code>local()</code> functon before placing <code>url()</code> to check whether the device already has the font saved locally, and if not, to download it from the source specified in the <code>url();</code>.
       </li>
       <li>
-        We have to make sure that we can use it for free, if not we have to pay before we are using it.
+        Sometimes we have to assign fallback fonts for our custom webfonts we add via @font-face. We have to make sure that we can use it for free, if not we have to pay before we are using it.
       </li>
       <li>
-        We can use <code>src: url() format();</code> property to help the browser decide on which strategy to use.
+        We can use <code>font-family: ;</code> property to help the browser decide on which strategy to use.
       </li>
     </ol>
   </nav>
