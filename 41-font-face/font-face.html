@@ -31,7 +31,7 @@
         The difference between @font-face and the other @-blocks are:
         <ul>
           <li>
-            We don't need to give a name with @font-face
+            We don't need to give a name with @font-face and don't need to use querrie.
           </li>
           <li>Some @font-face need licence whereas other @-blocks don't need.</li>
           <li>
@@ -50,7 +50,7 @@
         Our users have to download 160KB in the example above.
       </li>
       <li>
-        If we chose to offer WOFF2 as well as WOFF, we need to have need to specify both: <br>
+        If we chose to offer WOFF2 as well as WOFF, we need to have 16 files to specify: <br>
         <u>Eg</u>:<br>
         <code>
           @font-face {
@@ -64,10 +64,10 @@
         For us to be sure that user's browser doesn't download the fonts they might already have, we place the <code>local()</code> functon before placing <code>url()</code> to check whether the device already has the font saved locally, and if not, to download it from the source specified in the <code>url();</code>.
       </li>
       <li>
-        Sometimes we have to assign fallback fonts for our custom webfonts we add via @font-face. We have to make sure that we can use it for free, if not we have to pay before we are using it.
+        Sometimes we have to assign fallback fonts for our custom webfonts we add via @font-face. We have do bear in mind that we should always use the same type the font for its fallback or not really different from its other.
       </li>
       <li>
-        We can use <code>font-family: ;</code> property to help the browser decide on which strategy to use.
+        We can render fallback font firs or it is just blank untill downloaded, or by using <code>font-display: ;</code>to help the browser decide on which strategy to use.
       </li>
     </ol>
   </nav>
