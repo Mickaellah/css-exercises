@@ -25,7 +25,7 @@ body {
 
 }
 
-.home_page {
+.navigation__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -34,14 +34,18 @@ body {
 
 }
 
-.home_page__link {
+.navigation__list_item {
+  list-style: none;
+}
+
+.navigation__link {
   text-decoration: none;
   color: var(--inverse-colour);
   background-color: var(--secondary-colour);
   padding-inline-start: var(--nav-tab-horizontal-padding);
   padding-inline-end: var(--nav-tab-horizontal-padding);
   padding-block-start: var(--nav-tab-vertical-paddingnav);
-  padding-block-end: var(--nav-tab-vertical-padding);
+  /* padding-block-end: var(--nav-tab-vertical-padding); */
   margin-inline-start: var(--nav-tab-gap);
   border-top-left-radius: var(--nav-tab-radius-amount);
   border-top-right-radius: var(--nav-tab-radius-amount);
