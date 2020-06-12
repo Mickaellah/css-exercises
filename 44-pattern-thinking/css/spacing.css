@@ -49,10 +49,22 @@ section:nth-of-type(1) .example {
   justify-items: center;
 }
 
-[data-example="3"] article {
-
-
+[data-example="3"] header {
+  margin-block-end: 1rem;
 }
+[data-example="3"] header h2 {
+  display: inline-block;
+}
+[data-example="3"] .content {
+  margin-block-end: 1rem;
+}
+[data-example="3"] div p {
+  display: inline-block;
+}
+[data-example="3"] footer p {
+  display: inline-block;
+}
+
 
 
 
