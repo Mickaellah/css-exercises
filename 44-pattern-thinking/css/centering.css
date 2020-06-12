@@ -4,8 +4,16 @@
   align-items: center;
 }
 
+[data-example="4"] p {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
 
 [data-example="5"] > .centred {
+  display: flex;
+  justify-content: center;
   transform: translateY(50%);
 }
 
@@ -17,4 +25,5 @@
 
 [data-example="6"] > .centred {
   margin: auto;
+
 }
