@@ -15,16 +15,34 @@
 }
 
 /* 10 */
-[data-example="10"] {
+[data-example="10"] button {
+  background-image: url("../images/icon_heart.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 1rem;
 
 }
 
 /* 11 */
-[data-example="11"] {
+[data-example="11"] button::before {
+  content: url("../images/icon_heart.svg");
 
 }
 
 /* 12 */
 [data-example="12"] {
+  display: flex;
+  /* justify-content: stretch; */
+  align-items: center;
+}
 
+/* [data-example="12"] button {
+  display: flex;
+  flex-grow: 1;
+  margin-inline-start: 3rem;
+  margin-inline-end: 3rem;
+} */
+
+[data-example="12"] span {
+  padding-inline-start: 1rem;
 }
